@@ -11,13 +11,17 @@ const CoresEscuras=[
 ];
 
 function obterIndiceIndex(){
-
+ const indiceIndex =Math.floor(CoresEscuras.length * Math.random());
+ return indiceIndex;
 }
 
-const body;
+const body = document.querySelector("body");
+const bgCodigoHexSpanElement =document.querySelector("bg-codigo-hex");
 
 function mudeCordeFundo(){
-
+const cor= CoresEscuras[obterIndiceIndex()];
+bgCodigoHexSpanElement.innerText =cor;
+body.style.background =cor;
 }
 
 const btn;
