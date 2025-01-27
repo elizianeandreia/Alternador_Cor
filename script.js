@@ -10,19 +10,18 @@ const CoresEscuras = [
 ];
 
 function obterIndiceIndex() {
- const indiceIndex = Math.floor(CoresEscuras.length * Math.random());
- return indiceIndex;
+    const indiceIndex = Math.floor(CoresEscuras.length * Math.random());
+    return indiceIndex;
 }
 
 const body = document.querySelector("body");
-const bgCodigoHexSpanElement =document.querySelector("#bg-codigo-hex");
+const bgCodigoHexSpanElement = document.querySelector("#bg-codigo-hex");
 
-function mudeCordeFundo(){
-const cor = CoresEscuras[obterIndiceIndex()];
-bgCodigoHexSpanElement.innerText =cor;
-body.style.backgroundColor =cor;
+function mudeCordeFundo() {
+    const cor = CoresEscuras[obterIndiceIndex()];
+    bgCodigoHexSpanElement.innerText = cor;
+    body.style.backgroundColor = cor;
 }
 
 const btn = document.querySelector("#btn");
-btn.onclick= mudeCordeFundo();
-
+btn.onclick = mudeCordeFundo;
