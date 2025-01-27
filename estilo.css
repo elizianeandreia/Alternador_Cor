@@ -1,0 +1,21 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+    --rosa: #e06f9b;
+    --roxo: #670a74;
+    --perolado: #b7b8a2;
+    --vermelho: #940000;
+}
+
+body {
+    background-color: var(--perolado);
+    color: var(--red);
+    text-align: center;
+  }
+  
