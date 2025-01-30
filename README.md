@@ -1,2 +1,2 @@
 # Alternador_Cor
- Alternador de cor de fundo(Background) simples em Java.
+ Alternador de cor de fundo <i>(Background)</i> simples em Java/CSS.
